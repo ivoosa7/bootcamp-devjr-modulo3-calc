@@ -13,7 +13,12 @@
             <h1>Calculadora</h1>
             <input id="num1" type="number" placeholder="Digite um número">
             <input id="num2" type="number" placeholder="Digite um número">
-            <button onclick="calc()">Somar</button>
+            <div class="buttons">
+                <button onclick="calc('+')">+</button>
+                <button onclick="calc('-')">-</button>
+                <button onclick="calc('*')">x</button>
+                <button onclick="calc('/')">/</button>
+            </div>
             <input id="output" placeholder="Resultado">
         </div>
         <div class="historico">
