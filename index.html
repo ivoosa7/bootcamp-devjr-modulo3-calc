@@ -9,19 +9,28 @@
 <body>
     <div class="container">
         <div class="calc">
-            <img src="Projeto Exemplo_ Calculadora/assets/calculate_black_48dp.svg" alt="imagem da calculadora">
-            <h1>Calculadora</h1>
+            <object data="Projeto Exemplo_ Calculadora/assets/calculate_black_48dp.svg" type=""></object>
+            <div class="calc-title">
+                Calculadora
+            </div>
             <input id="num1" type="number" placeholder="Digite um número">
             <input id="num2" type="number" placeholder="Digite um número">
             <div class="buttons">
                 <button onclick="calc('+')">+</button>
                 <button onclick="calc('-')">-</button>
-                <button onclick="calc('*')">x</button>
+                <button onclick="calc('*')">*</button>
                 <button onclick="calc('/')">/</button>
             </div>
             <input id="output" placeholder="Resultado">
         </div>
-        <div id="history" class="historico">
+        <div class="historico">
+            <h1>Histórico:</h1>
+            <div class="last-operations">
+                <small>As 10 últimas operações</small>
+            </div>
+            <div id="history">
+
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

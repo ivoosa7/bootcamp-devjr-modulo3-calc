@@ -17,7 +17,12 @@ function calc(operador){
     }
     document.getElementById("output").value = output;
 
-    var newHistory = "<div>" + num1 + "  " + operador + "  " + num2 + " = " + output + "</div>";
+    var newHistory = "<p>" + num1 + "  " + operador + "  " + num2 + " = " + output + "</p>";
+    var history = document.getElementById("history");
 
-    document.getElementById("history").innerHTML = newHistory + document.getElementById("history").innerHTML;
+    history.innerHTML = newHistory + history.innerHTML;
+
+    if(history.children.length > 10){ //vai pegar o tamanho de div que foi criado e se for maior que 10 vai entrar na lógica abaixo 
+        history.removeChild(history.childNodes[10]); //Lógica que remove a div na posição 11 do array
+    }
 }
